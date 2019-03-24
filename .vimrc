@@ -57,6 +57,8 @@ set number
 set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
+" Set backspace <Del> to work as it does it other text editors
+set backspace=indent,eol,start
 " If you prefer the Omni-Completion tip window to close when a selection is
 " made, these lines close it on movement in insert mode or when leaving
 " insert mode
@@ -68,9 +70,9 @@ set cindent " same as above
 execute pathogen#infect()  
 " redefine emmet command as ','
 let g:user_emmet_leader_key=','
-" NERDTree
-let NERDTreeIgnore = ['\.py[co]$', '__pycache__']
-comm! NT NERDTreeToggle
-let g:NERDTreeWinSize = 18
-" React component boilerplate
-:inoremap rc <Esc>:.-1r ~/.vim/boilerplate/react/class_component.js<cr>:%s/___/\=expand('%:r')/g<cr>jdd10ki<Tab><Tab><Tab><Tab>
+" React class component boilerplate
+:inoremap _rc <Esc>:.-1r ~/.vim/boilerplate/react/class_component.js<cr>:%s/___/\=expand('%:r')/g<cr>jdd8ki<Tab><Tab><Tab><Tab>
+" React functional component boilerplate
+:inoremap _rfc <Esc>:.-1r ~/.vim/boilerplate/react/functional_component.js<cr>:%s/___/\=expand('%:r')/g<cr>jdd7ki<Tab><Tab><Tab>
+" Set vim window splits to be equal in width
+:set ead=hor ea noea
