@@ -76,3 +76,7 @@ let g:user_emmet_leader_key=','
 :inoremap _rfc <Esc>:.-1r ~/.vim/boilerplate/react/functional_component.js<cr>:%s/___/\=expand('%:r')/g<cr>jdd7ki<Tab><Tab><Tab>
 " Set vim window splits to be equal in width
 :set ead=hor ea noea
+" command to fix screen spacings
+:command Fvs :set ead=hor ea noea
+" set vsplit to open new window to the right
+:set splitright
