@@ -80,3 +80,16 @@ let g:user_emmet_leader_key=','
 :command Fvs :set ead=hor ea noea
 " set vsplit to open new window to the right
 :set splitright
+" add autocomplete for css files
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+" saves previous undoes from before file was closed
+if has("vms")
+	  set nobackup
+	else
+	  set backup
+	  if has('persistent_undo')
+	    set undofile
+	  endif
+	endif
+" set colorscheme to wombat256
+colorscheme wombat256

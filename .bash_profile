@@ -20,3 +20,9 @@ PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
 export PATH
 # use control-t to open new terminal tab from working director
 bind '"\C-t":"open . -a iterm \x0a clear \x0a"'
+# use .bash_aliases file to load aliases
+if [ -f ~/.bash_aliases ]; then
+. ~/.bash_aliases
+fi
+# change color for grep highlighting
+export GREP_COLOR='1;39'
