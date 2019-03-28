@@ -24,5 +24,13 @@ bind '"\C-t":"open . -a iterm \x0a clear \x0a"'
 if [ -f ~/.bash_aliases ]; then
 . ~/.bash_aliases
 fi
+# use .bash_completions file to load tab-completes for specific commands
+if [ -f ~/.bash_completions ]; then
+. ~/.bash_completions
+fi
 # change color for grep highlighting
 export GREP_COLOR='1;39'
+# use bash-completion with homebrew
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi

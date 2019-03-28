@@ -1,8 +1,9 @@
-# Ignore everything
+# ignore everything
 *
 
-# Except
+# except
 !.gitignore
 !.vimrc
 !.bash_profile
 !.bash_aliases
+!.bash_completions

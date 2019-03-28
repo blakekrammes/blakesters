@@ -1,0 +1,4 @@
+# tab-completions for the o ('open' command) for applications
+complete -W "chrome firefox itunes pages photos powerpoint safari word" o
+# tab-completions for the q ('quit' command) for applications
+complete -W "chrome firefox itunes pages photos powerpoint safari word" q
