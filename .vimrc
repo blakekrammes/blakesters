@@ -1,7 +1,7 @@
 " basics: 
     set nocompatible              
     filetype off                 
-""    syntax on
+    syntax on
     set number
 
 " abbreviations:
@@ -63,10 +63,6 @@
 " vim stylings:
     " set colorscheme 
     colorscheme wombat256
-
-" additional custom syntax highlighting
-    highlight Declarations ctermfg=blue
-    match Declarations /let/
 
 " vim system settings:
     " saves previous undoes from before file was closed
