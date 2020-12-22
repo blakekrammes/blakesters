@@ -114,11 +114,12 @@ source $ZSH/oh-my-zsh.sh
 code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 export INEO_HOME=/Users/blakekrammes/.ineo; export PATH=$INEO_HOME/bin:$PATH
 
-# aliases
+# aliases_|_|_|_|_|_|_
+# git aliases
 alias stash="git add . && git stash"
+alias apply="git stash apply"
 alias stashpull="git add . && git stash && git pull && git stash apply"
 alias asdf="git add . && git commit -m 'asdf' --no-verify"
 alias cont="git add . && git rebase --continue"
 alias skip= "git add . && git rebase --skip"
 alias c="git checkout"
-
