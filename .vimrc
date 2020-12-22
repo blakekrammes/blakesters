@@ -6,6 +6,7 @@
     " put backups and swaps out of the current dir
     set backupdir=~/.vim/tmp//,.
     set directory=~/.vim/tmp//,.
+    set undodir=~/.vim/tmp//,.
 
 " abbreviations:
     abbr _email blakekrammes@protonmail.com
